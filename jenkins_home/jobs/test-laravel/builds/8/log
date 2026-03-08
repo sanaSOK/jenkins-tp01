@@ -1,0 +1,23 @@
+Started by user [8mha:////4IjgiWzspyUQZseI1XeM9wcFK1mIJmF493cPEwTt9jyfAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0mSOK SANA
+Running as SYSTEM
+Building remotely on [8mha:////4F/rIgM6auwMQaL96amNeLlFpCyl6alr2xcj72yxO6RvAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZB/eT83ILSktQifcf01LwSQ30AEuiDlsYAAAA=[0mAgent1 (laravel) in workspace /var/jenkins_home/workspace/test-laravel
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/test-laravel/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sanaSOK/jenkins-tp01.git # timeout=10
+Fetching upstream changes from https://github.com/sanaSOK/jenkins-tp01.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/sanaSOK/jenkins-tp01.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 867b3b829f0e56a85e52cbfad345198872e9d3b5 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 867b3b829f0e56a85e52cbfad345198872e9d3b5 # timeout=10
+Commit message: "update"
+ > git rev-list --no-walk 867b3b829f0e56a85e52cbfad345198872e9d3b5 # timeout=10
+[test-laravel] $ /bin/sh -xe /tmp/jenkins16882584544872421984.sh
++ cp .env.example .env
+cp: cannot stat '.env.example': No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
