@@ -6,7 +6,7 @@ services:
     ports:
       - 8080:8080 # for jenkins web interface
       - 50000:50000 # for jenkins slave agents (runners)
-    container_name: jenkins-tp01-I4c
+    container_name: jenkins-tp01-sana-I4c
     volumes:
       - "D:/I4/SERMISTER II/DevOps/TP/A/TP01/jenkins_home:/var/jenkins_home"
     links:
@@ -14,9 +14,10 @@ services:
   agent1:
     build: ./laravel-agent
     image: i4c/jenkins-agent:latest
-    container_name: jenkins-laravel-agent-I4c
+    container_name: jenkins-laravel-agent-sana-I4c
     environment:
       
-      - JENKINS_AGENT_SSH_PUBKEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOm5ATQs5YNnPC+dB7IHQtKoQeDwwaa35wgdM702L/C4 U-ser@DESKTOP-JH8Q78A
+      - JENKINS_AGENT_SSH_PUBKEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAuGldHdyqyNYmidGrNfGT+uPqyraR4yhusHv/sKnl91 U-ser@DESKTOP-JH8Q78A
+
     volumes:
     - "D:/I4/SERMISTER II/DevOps/TP/A/TP01/jenkins_home:/var/jenkins_home" # replace with the actual secret from Jenkins

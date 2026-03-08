@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <slave>
   <name>Agent1</name>
-  <description>laravel auto build and test agent</description>
+  <description>Laravel auto build and test agent</description>
   <remoteFS>/var/jenkins_home</remoteFS>
   <numExecutors>8</numExecutors>
   <mode>NORMAL</mode>
